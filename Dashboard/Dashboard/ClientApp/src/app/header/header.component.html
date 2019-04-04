@@ -1,0 +1,83 @@
+<div id="topNavBack"></div>
+<div id="topNavFront" class="container-fluid">
+  <div class="row-fluid">
+    <table class="table">
+      <tr>
+        <td><a [routerLink]='["/"]'><img src="../assets/dashBoxLogo.png" style="width:150px;" /></a></td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-picture"></span> INTERACTIVE
+            <div id="ddBox1" class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/conversations"]'><span class="glyphicon glyphicon-comment"></span> Conversations</a></li>
+                <li><a [routerLink]='["/boards"]'><span class="glyphicon glyphicon-blackboard"></span> Message Boards</a></li>
+                <li><a [routerLink]='["/friends"]'><span class="glyphicon glyphicon-user"></span> Friends</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-picture"></span> MEDIA FRENZY
+            <div class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/games"]'><span class="glyphicon glyphicon-knight"></span> Games</a></li>
+                <li><a [routerLink]='["/radio"]'><span class="glyphicon glyphicon-music"></span> Radio</a></li>
+                <li><a [routerLink]='["/videos"]'><span class="glyphicon glyphicon-film"></span> Videos</a></li>
+                <li><a [routerLink]='["/photos"]'><span class="glyphicon glyphicon-camera"></span> Photos</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-usd"></span> BUY/SELL
+            <div class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/marketplace"]'><span class="glyphicon glyphicon-usd"></span> Marketplace</a></li>
+                <li><a [routerLink]='["/reports"]'><span class="glyphicon glyphicon-signal"></span> Sales Reports</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-bullhorn"></span> WHAT'S NEW!
+            <div class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/news"]'><span class="glyphicon glyphicon-globe"></span> News Feed</a></li>
+                <li><a [routerLink]='["/weather"]'><span class="glyphicon glyphicon-cloud"></span> Weather</a></li>
+                <li><a [routerLink]='["/stocks"]'><span class="glyphicon glyphicon-stats"></span> Stocks</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;STORAGE
+            <div class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/files"]'><span class="glyphicon glyphicon-duplicate"></span> Files</a></li>
+                <li><a [routerLink]='["/links"]'><span class="glyphicon glyphicon-link"></span> Fav Links</a></li>
+                <li><a [routerLink]='["/locations"]'><span class="glyphicon glyphicon-map-marker"></span> Fav Locations</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="dropdown">
+            <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;MANAGE
+            <div class="dropdownBox">
+              <ul>
+                <li><a [routerLink]='["/profile"]'><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                <li><a [routerLink]='["/settings"]'><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+                <li><a [routerLink]='["/login", 1]'><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+

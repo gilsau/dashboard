@@ -1,0 +1,68 @@
+#topNavBack {
+  background-color: #000080;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#topNavFront {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+  #topNavFront div table td{
+    vertical-align: top;
+    padding-top: 2px;
+  }
+
+  #topNavFront .glyphicon {
+    font-size: 20px;
+  }
+
+  #topNavFront a {
+    font-size: 15px;
+  }
+
+  #topNavFront .glyphicon, #topNavFront a, .dropdown {
+    color: white;
+    vertical-align: top;
+  }
+  
+.dropdown {
+  cursor: default;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0px 0px 0px;
+}
+
+  .dropdown:hover .dropdownBox {
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+  }
+
+.dropdownBox {
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .8s linear;
+  background-image: linear-gradient(to bottom, #000080, #000);
+  font-weight: 300;
+  width: 200px;
+}
+
+  .dropdownBox ul {
+    list-style-type: none;
+    padding: 5px 0px 5px 10px;
+  }
+
+  .dropdownBox ul li {
+    margin: 0px;
+    padding: 5px;
+  }

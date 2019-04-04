@@ -7,26 +7,110 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]='["/"]'>Dashboard</a>
+            <a class='navbar-brand' [routerLink]='["/"]'>My Dashboard</a>
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
+            <table class="table">
+              <tr>
+                <td class="text-center"><a [routerLink]='["/settings"]'><span class='glyphicon glyphicon-cog loneGlyph'></span></a></td>
+                <td class="text-center"><a [routerLink]='["/notifications"]'><span class='glyphicon glyphicon-bell loneGlyph'></span></a></td>
+                <td class="text-center"><a [routerLink]='["/messages"]'><span class='glyphicon glyphicon-envelope loneGlyph'></span></a></td>
+              </tr>
+            </table>
             <ul class='nav navbar-nav'>
-                <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-                    <a [routerLink]='["/"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/counter"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/fetch-data"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/friends"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-user'></span> Friends
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/conversations"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-comment'></span> Conversations
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/boards"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-blackboard'></span> Boards
+                </a>
+              </li>
+              <li>
+                <hr />
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/marketplace"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-usd'></span> Marketplace
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/reports"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-signal'></span> Sales Reports
+                </a>
+              </li>
+              <li>
+                <hr />
+              </li>
+              <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/games"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-knight'></span> Games
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/radio"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-music'></span> Radio
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/photos"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-camera'></span> Photos
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/videos"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-facetime-video'></span> Videos
+                </a>
+              </li>
+              <li>
+                <hr />
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/news"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-bullhorn'></span> News
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/sports"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-flag'></span> Sports
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/weather"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-flash'></span> Weather
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/stocks"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-stats'></span> Stocks
+                </a>
+              </li>
+              <li>
+                <hr />
+              </li>
+              <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/files"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-file'></span> Files
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/locations"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-map-marker'></span> Fav Locations
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/links"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-link'></span> Fav Links
+                </a>
+              </li>
             </ul>
         </div>
     </div>
