@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './boards.component.html'
 })
 export class BoardsComponent {
-  public pageTitle = 'Boards';
+  public pageTitle = 'Forums';
 }

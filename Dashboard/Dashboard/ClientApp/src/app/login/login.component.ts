@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login-component',
@@ -7,20 +8,27 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LoginComponent {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private userSvc:UserService ) { }
 
   ngOnInit() {
+
+    console.log('first user: ' + this.userSvc.getFirstUser());
+
+
     let logout = 0;
 
     this.route.paramMap.subscribe(params => {
       logout = this.route.snapshot.params.logout;
     });
 
+    //logout user
     if (logout == 1) {
-      console.log('logout the user');
+      
     }
+
+    //check if user is logged in, if so, redirect user to home page
     else {
-      console.log('user is still logged in');
+      
     }
   }
 

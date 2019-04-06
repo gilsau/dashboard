@@ -2,5 +2,80 @@ body {
   color: #fff;
   font-family: Arial;
   font-size: 15px;
-  padding: 60px 20px 20px 20px;
+  background-color: #fff;
+  padding: 70px 0px 0px 0px;
+}
+
+#sidebar {
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+}
+
+.sidebarSection {
+  border: solid 1px #808080;
+  border-radius: 3px;
+  margin: 10px 0px 0px 0px;
+  background-color: #fff;
+  color: #483d3d;
+  cursor: default;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+}
+
+.sidebarBox ul {
+  padding: 0px 0px 0px 20px;
+  list-style-type: none;
+}
+
+.userPic {
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px #fff;
+}
+
+.profilePrevBox {
+  border: solid 1px #808080;
+  border-radius: 3px;
+  margin: 10px 0px 0px 0px;
+  color: #000;
+  cursor: default;
+  font-weight: 300;
+  padding: 0px;
+  text-align: center;
+}
+
+  .profilePrevBox ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .profilePrevBox ul li {
+    border-top: solid 1px #eee;
+    padding: 5px;
+  }
+
+hr.thin {
+  padding: 1px;
+  margin: 0px;
+}
+
+#navbar .glyphicon {
+  font-size: 17px;
+  padding-left: 8px;
+}
+
+/* Open Bootstrap Navbar Dropdown Menu, on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+[type='search'] {
+  width: 340px;
+  border: none;
+  padding: 7px;
+  border-radius: 3px;
 }
