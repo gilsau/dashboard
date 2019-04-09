@@ -1,0 +1,12 @@
+
+<div style="padding:50px;">
+  <h2>Sign Up</h2>
+  <form #userRegistrationForm="ngForm">
+    <div style="padding:5px;">UserName: <input type="text" name="UserName" #UserName="ngModel" [(ngModel)]="user.UserName" /></div>
+    <div style="padding:5px;">Password: <input type="text" name="Password" #Password="ngModel" [(ngModel)]="user.Password" /></div>
+    <div style="padding:5px;">Email: <input type="text" name="Email" #Email="ngModel" [(ngModel)]="user.Email" /></div>
+    <div style="padding:5px;">FirstName: <input type="text" name="FirstName" #FirstName="ngModel" [(ngModel)]="user.FirstName" /></div>
+    <div style="padding:5px;">LastName: <input type="text" name="LastName" #LastName="ngModel" [(ngModel)]="user.LastName" /></div>
+    <div style="padding:5px;"><button type="submit" name="Submit"></button></div>
+  </form>
+</div>

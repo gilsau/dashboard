@@ -11,6 +11,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ConversationsComponent } from './conversations/conversations.component';
 import { CounterComponent } from './counter/counter.component';
 import { EbayComponent } from './ebay/ebay.component';
+import { EventsComponent } from './events/events.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { FBMarketplaceComponent } from './fbmarketplace/fbmarketplace.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
@@ -48,8 +49,11 @@ import { TasksComponent } from './tasks/tasks.component';
 import { TwitterComponent } from './twitter/twitter.component';
 import { VideosComponent } from './videos/videos.component';
 import { WeatherComponent } from './weather/weather.component';
-import { UserService } from './services/user.service';
+import { YouTubeComponent } from './youtube/youtube.component';
 
+import { UserService } from './services/user.service';
+import { CookieService } from './services/cookie.service';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +64,7 @@ import { UserService } from './services/user.service';
     ConversationsComponent,
     CounterComponent,
     EbayComponent,
+    EventsComponent,
     FacebookComponent,
     FBMarketplaceComponent,
     FetchDataComponent,
@@ -90,13 +95,15 @@ import { UserService } from './services/user.service';
     ReportsComponent,
     SearchComponent,
     SettingsComponent,
+    SidebarComponent,
     SportsComponent,
     StocksComponent,
     TasksComponent,
     TwitterComponent,
     VideosComponent,
     WeatherComponent,
-    SidebarComponent
+    YouTubeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -109,15 +116,15 @@ import { UserService } from './services/user.service';
       { path: 'conversations', component: ConversationsComponent },
       { path: 'counter', component: CounterComponent },
       { path: 'ebay', component: EbayComponent },
+      { path: 'events', component: EventsComponent },
       { path: 'facebook', component: FacebookComponent },
       { path: 'fbmarketplace', component: FBMarketplaceComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'files', component: FilesComponent },
       { path: 'findprofessionals', component: FindProfessionalsComponent },
       { path: 'friends', component: FriendsComponent },
-      { path: 'friendFeed', component: FriendFeedComponent },
+      { path: '', component: FriendFeedComponent },
       { path: 'games', component: GamesComponent },
-      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'invites', component: InvitesComponent },
       { path: 'instagram', component: InstagramComponent },
       { path: 'jobs', component: JobsComponent },
@@ -143,10 +150,11 @@ import { UserService } from './services/user.service';
       { path: 'tasks', component: TasksComponent },
       { path: 'twitter', component: TwitterComponent },
       { path: 'videos', component: VideosComponent },
-      { path: 'weather', component: WeatherComponent }
+      { path: 'weather', component: WeatherComponent },
+      { path: 'youtube', component: YouTubeComponent }
     ])
   ],
-  providers: [UserService],
+  providers: [UserService,CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

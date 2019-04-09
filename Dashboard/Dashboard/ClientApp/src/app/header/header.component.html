@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" style="padding-top:10px;">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -7,72 +7,90 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a [routerLink]='["/"]'><img src="../assets/dashBoxLogo.png" style="width:150px;" /></a>
-      &nbsp;&nbsp;
-      <input type="search" placeholder="Search people, places, jobs, posts, articles, videos" /><br />
-      <span style="color:#fff;font-style:italic;font-weight:600;font-size:15px;" >Work Hard! ...and, Play Hard!</span>
+      <table id="tblLogo">
+        <tr>
+          <td><a [routerLink]='["/"]'><img src="../assets/dashBoxLogo.png" style="width:150px;" /></a></td>
+          <td><input type="search" placeholder="Search people, places, jobs, posts, articles, videos, events, files..." /></td>
+        </tr>
+      </table>
     </div>
-    <div id="navbar" class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
-      <ul class="nav navbar-nav navbar-left">
-        <li class="text-left"><a [routerLink]='["/"]'><span class="glyphicon glyphicon-home"></span><br />Home</a></li>
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav navbar-right">
         <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bullhorn"></span><br />News <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/news"]'><span class="glyphicon glyphicon-globe"></span> News Feed</a></li>
-            <li><a [routerLink]='["/weather"]'><span class="glyphicon glyphicon-cloud"></span> Weather</a></li>
-            <li><a [routerLink]='["/stocks"]'><span class="glyphicon glyphicon-stats"></span> Stocks</a></li>
-          </ul>
+          <div class="head-link"><a id="homeLink" [routerLink]='["/"]' [routerLinkActive]='["head-active-link"]' [routerLinkActiveOptions]="{exact: true}"><span class="glyphicon glyphicon-home"></span><br />Home</a></div>
         </li>
         <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th"></span><br />Work <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/calendar"]'><span class="glyphicon glyphicon-calendar"></span> Calendar</a></li>
-            <li><a [routerLink]='["/tasks"]'><span class="glyphicon glyphicon-th-list"></span> Tasks</a></li>
-            <li><a [routerLink]='["/files"]'><span class="glyphicon glyphicon-duplicate"></span> Files</a></li>
-          </ul>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-bullhorn"></span><br />News <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/news"]'><span class="glyphicon glyphicon-globe"></span> News Feed</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/weather"]'><span class="glyphicon glyphicon-cloud"></span> Weather</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/stocks"]'><span class="glyphicon glyphicon-stats"></span> Stocks</a></li>
+            </ul>
+          </div>
         </li>
         <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-briefcase"></span><br />Jobs <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/jobs"]'><span class="glyphicon glyphicon-search"></span> Find Jobs</a></li>
-            <li><a [routerLink]='["/jobprofile"]'><span class="glyphicon glyphicon-briefcase"></span> My Job Profile</a></li>
-            <li><a [routerLink]='["/portfolio"]'><span class="glyphicon glyphicon-picture"></span> My Portfolio</a></li>
-            <li><a [routerLink]='["/postjob"]'><span class="glyphicon glyphicon-cloud-upload"></span> Post A Job</a></li>
-            <li><a [routerLink]='["/findprofessionals"]'><span class="glyphicon glyphicon-search"></span> Find Professionals</a></li>
-          </ul>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-th"></span><br />Work <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/calendar"]'><span class="glyphicon glyphicon-calendar"></span> Calendar</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/tasks"]'><span class="glyphicon glyphicon-pushpin"></span> Tasks</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/files"]'><span class="glyphicon glyphicon-duplicate"></span> Files</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-signal"></span><br />Sales <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/marketplace"]'><span class="glyphicon glyphicon-usd"></span> Dash Marketplace</a></li>
-            <li><a [routerLink]='["/fbmarketplace"]'><span class="glyphicon glyphicon-usd"></span> Facebook Marketplace</a></li>
-            <li><a [routerLink]='["/ebay"]'><span class="glyphicon glyphicon-usd"></span> Push to Ebay</a></li>
-            <li><a [routerLink]='["/amazon"]'><span class="glyphicon glyphicon-usd"></span> Push to Amazon</a></li>
-            <li><a [routerLink]='["/reports"]'><span class="glyphicon glyphicon-signal"></span> Sales Reports</a></li>
-          </ul>
+        <li class="dropdown text-left" [routerLinkActive]='["head-active-link"]'>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-briefcase"></span><br />Jobs <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/jobs"]'><span class="glyphicon glyphicon-search"></span> Find Jobs</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/jobprofile"]'><span class="glyphicon glyphicon-briefcase"></span> My Job Profile</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/portfolio"]'><span class="glyphicon glyphicon-picture"></span> My Portfolio</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/postjob"]'><span class="glyphicon glyphicon-cloud-upload"></span> Post A Job</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/findprofessionals"]'><span class="glyphicon glyphicon-search"></span> Find Professionals</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span><br />Msgs <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/conversations"]'><span class="glyphicon glyphicon-comment"></span> Conversations</a></li>
-            <li><a [routerLink]='["/boards"]'><span class="glyphicon glyphicon-edit"></span> Forums</a></li>
-            <li><a [routerLink]='["/friends"]'><span class="glyphicon glyphicon-user"></span> Friends</a></li>
-          </ul>
+        <li class="dropdown text-left" [routerLinkActive]='["head-active-link"]'>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-signal"></span><br />Sales <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/marketplace"]'><span class="glyphicon glyphicon-usd"></span> Dash Marketplace</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/fbmarketplace"]'><span class="glyphicon glyphicon-usd"></span> Facebook Marketplace</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/ebay"]'><span class="glyphicon glyphicon-usd"></span> Push to Ebay</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/amazon"]'><span class="glyphicon glyphicon-usd"></span> Push to Amazon</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/reports"]'><span class="glyphicon glyphicon-signal"></span> Sales Reports</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="dropdown text-left">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span><br />Notify <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/notifications"]'><span class="glyphicon glyphicon-bell"></span> Notifications</a></li>
-            <li><a [routerLink]='["/invites"]'><span class="glyphicon glyphicon-envelope"></span> Invites</a></li>
-          </ul>
+        <li class="dropdown text-left" [routerLinkActive]='["head-active-link"]'>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-comment"></span><br />Msgs <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/conversations"]'><span class="glyphicon glyphicon-comment"></span> Conversations</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/boards"]'><span class="glyphicon glyphicon-edit"></span> Forums</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/friends"]'><span class="glyphicon glyphicon-user"></span> Friends</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="dropdown">
-          <a [routerLink]='["/friendFeed"]' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../assets/user.jpg" class="userPic" /> <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a [routerLink]='["/profile"]'><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-            <li><a [routerLink]='["/settings"]'><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
-            <li><a [routerLink]='["/login", 1]'><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-          </ul>
+        <li class="dropdown text-left" [routerLinkActive]='["head-active-link"]'>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><span class="glyphicon glyphicon-bell"></span><br />Notify <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/notifications"]'><span class="glyphicon glyphicon-bell"></span> Notifications</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/invites"]'><span class="glyphicon glyphicon-envelope"></span> Invites</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown text-left" [routerLinkActive]='["head-active-link"]'>
+          <div [routerLinkActive]='["head-active-link"]'>
+            <div class="head-link"><img src="../assets/user.jpg" class="userPic" /> <span class="caret"></span></div>
+            <ul class="dropdown-menu">
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/profile"]'><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/settings"]'><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+              <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/login", 1]'><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div><!--/.nav-collapse -->

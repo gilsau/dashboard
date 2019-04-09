@@ -1,34 +1,33 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../services/user.service';
+import { CookieService } from '../services/cookie.service';
 
 @Component({
   selector: 'app-login-component',
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
 
-  constructor(private route: ActivatedRoute, private userSvc:UserService ) { }
+  constructor(private route: ActivatedRoute, private userSvc:UserService, private cookieSvc:CookieService) { }
 
   ngOnInit() {
 
-    console.log('first user: ' + this.userSvc.getFirstUser());
-
-
+    //check logout param
     let logout = 0;
-
     this.route.paramMap.subscribe(params => {
       logout = this.route.snapshot.params.logout;
     });
-
+    
     //logout user
     if (logout == 1) {
-      
-    }
+      let isLoggedIn = this.cookieSvc.getCookie('UserGUID') !== null;
 
-    //check if user is logged in, if so, redirect user to home page
-    else {
-      
+      //delete cookie
+      if (isLoggedIn) {
+        this.cookieSvc.delCookie('UserGUID');
+      }
     }
   }
 
