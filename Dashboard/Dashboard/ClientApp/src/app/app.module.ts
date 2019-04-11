@@ -43,6 +43,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { SearchComponent } from './search/search.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { SportsComponent } from './sports/sports.component';
 import { StocksComponent } from './stocks/stocks.component';
 import { TasksComponent } from './tasks/tasks.component';
@@ -74,7 +75,7 @@ import { SignupComponent } from './signup/signup.component';
     FriendFeedComponent,
     GamesComponent,
     HeaderComponent,
-    HomeComponent,
+    HomeComponent,  
     InstagramComponent,
     InvitesComponent,
     JobsComponent,
@@ -96,6 +97,7 @@ import { SignupComponent } from './signup/signup.component';
     SearchComponent,
     SettingsComponent,
     SidebarComponent,
+    Sidebar2Component,
     SportsComponent,
     StocksComponent,
     TasksComponent,
@@ -142,6 +144,7 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'portfolio', component: PortfolioComponent },
       { path: 'postjob', component: PostJobComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'profile/:edit', component: ProfileComponent },
       { path: 'radio', component: RadioComponent },
       { path: 'reports', component: ReportsComponent },
       { path: 'settings', component: SettingsComponent },
