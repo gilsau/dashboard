@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-ebay-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./ebay.component.css']
 })
 export class EbayComponent {
-  public pageTitle = 'Ebay';
+  constructor(app: AppComponent) {
+    app.title = "Ebay";
+  }
 }

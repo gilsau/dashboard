@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-friendFeed-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./friendFeed.component.css']
 })
 export class FriendFeedComponent {
-  public pageTitle = 'Friend Feed';
+  constructor(app: AppComponent) {
+    app.title = "Friend Feed";
+  }
 }

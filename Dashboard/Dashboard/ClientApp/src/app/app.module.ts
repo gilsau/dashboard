@@ -6,10 +6,11 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AmazonComponent } from './amazon/amazon.component';
-import { BoardsComponent } from './boards/boards.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CommentBoxComponent } from './commentbox/commentbox.component';
 import { ConversationsComponent } from './conversations/conversations.component';
 import { CounterComponent } from './counter/counter.component';
+import { CraigslistComponent } from './craigslist/craigslist.component';
 import { EbayComponent } from './ebay/ebay.component';
 import { EventsComponent } from './events/events.component';
 import { FacebookComponent } from './facebook/facebook.component';
@@ -17,6 +18,7 @@ import { FBMarketplaceComponent } from './fbmarketplace/fbmarketplace.component'
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FilesComponent } from './files/files.component';
 import { FindProfessionalsComponent } from './findprofessionals/findprofessionals.component';
+import { ForumsComponent } from './forums/forums.component';
 import { FriendsComponent } from './friends/friends.component';
 import { FriendFeedComponent } from './friendFeed/friendFeed.component';
 import { GamesComponent } from './games/games.component';
@@ -26,15 +28,18 @@ import { InstagramComponent } from './instagram/instagram.component';
 import { InvitesComponent } from './invites/invites.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobProfileComponent } from './jobprofile/jobprofile.component';
+import { LetGoComponent } from './letgo/letgo.component';
 import { LinkedinComponent } from './linkedin/linkedin.component';
 import { LinksComponent } from './links/links.component';
 import { LocationsComponent } from './locations/locations.component';
 import { LoginComponent } from './login/login.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { MessagesComponent } from './messages/messages.component';
-import { NewsComponent } from './news/news.component';
+import { NewsFeedComponent } from './newsfeed/newsfeed.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { OfferUpComponent } from './offerup/offerup.component';
 import { PhotosComponent } from './photos/photos.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PostJobComponent } from './postjob/postjob.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -60,10 +65,11 @@ import { SignupComponent } from './signup/signup.component';
   declarations: [
     AppComponent,
     AmazonComponent,
-    BoardsComponent,
     CalendarComponent,
+    CommentBoxComponent,
     ConversationsComponent,
     CounterComponent,
+    CraigslistComponent,
     EbayComponent,
     EventsComponent,
     FacebookComponent,
@@ -71,6 +77,7 @@ import { SignupComponent } from './signup/signup.component';
     FetchDataComponent,
     FilesComponent,
     FindProfessionalsComponent,
+    ForumsComponent,
     FriendsComponent,
     FriendFeedComponent,
     GamesComponent,
@@ -80,15 +87,18 @@ import { SignupComponent } from './signup/signup.component';
     InvitesComponent,
     JobsComponent,
     JobProfileComponent,
+    LetGoComponent,
     LinkedinComponent,
     LinksComponent,
     LocationsComponent,
     LoginComponent,
     MarketplaceComponent,
     MessagesComponent,
-    NewsComponent,
+    NewsFeedComponent,
     NotificationsComponent,
+    OfferUpComponent,
     PhotosComponent,
+    PinterestComponent,
     PortfolioComponent,
     PostJobComponent,
     ProfileComponent,
@@ -113,10 +123,10 @@ import { SignupComponent } from './signup/signup.component';
     FormsModule,
     RouterModule.forRoot([
       { path: 'amazon', component: AmazonComponent },
-      { path: 'boards', component: BoardsComponent },
       { path: 'calendar', component: CalendarComponent },
       { path: 'conversations', component: ConversationsComponent },
       { path: 'counter', component: CounterComponent },
+      { path: 'craigslist', component: CraigslistComponent },
       { path: 'ebay', component: EbayComponent },
       { path: 'events', component: EventsComponent },
       { path: 'facebook', component: FacebookComponent },
@@ -124,6 +134,7 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'files', component: FilesComponent },
       { path: 'findprofessionals', component: FindProfessionalsComponent },
+      { path: 'forums', component: ForumsComponent },
       { path: 'friends', component: FriendsComponent },
       { path: '', component: FriendFeedComponent },
       { path: 'games', component: GamesComponent },
@@ -131,6 +142,7 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'instagram', component: InstagramComponent },
       { path: 'jobs', component: JobsComponent },
       { path: 'jobprofile', component: JobProfileComponent },
+      { path: 'letgo', component: LetGoComponent },
       { path: 'linkedin', component: LinkedinComponent },
       { path: 'links', component: LinksComponent },
       { path: 'locations', component: LocationsComponent },
@@ -138,9 +150,11 @@ import { SignupComponent } from './signup/signup.component';
       { path: 'login', component: LoginComponent },
       { path: 'marketplace', component: MarketplaceComponent },
       { path: 'messages', component: MessagesComponent },
-      { path: 'news', component: NewsComponent },
+      { path: 'newsfeed', component: NewsFeedComponent },
       { path: 'notifications', component: NotificationsComponent },
+      { path: 'offerup', component: OfferUpComponent },
       { path: 'photos', component: PhotosComponent },
+      { path: 'pinterest', component: PinterestComponent },
       { path: 'portfolio', component: PortfolioComponent },
       { path: 'postjob', component: PostJobComponent },
       { path: 'profile', component: ProfileComponent },

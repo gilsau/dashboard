@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-amazon-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./amazon.component.css']
 })
 export class AmazonComponent {
-  public pageTitle = 'Amazon';
+  constructor(app: AppComponent) {
+    app.title = "Amazon";
+  }
 }

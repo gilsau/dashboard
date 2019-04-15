@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-twitter-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./twitter.component.css']
 })
 export class TwitterComponent {
-  public pageTitle = 'Twitter';
+  constructor(app: AppComponent) {
+    app.title = "Twitter";
+  }
 }

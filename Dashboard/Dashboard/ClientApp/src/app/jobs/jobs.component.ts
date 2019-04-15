@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-jobs-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./jobs.component.css']
 })
 export class JobsComponent {
-  public pageTitle = 'Jobs';
+  constructor(app: AppComponent) {
+    app.title = "Jobs";
+  }
 }

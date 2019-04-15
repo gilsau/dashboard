@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-portfolio-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
-  public pageTitle = 'Portfolio';
+  constructor(app: AppComponent) {
+    app.title = "Portfolio";
+  }
 }

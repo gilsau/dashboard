@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-settings-component',
   templateUrl: './settings.component.html'
 })
 export class SettingsComponent {
-  public pageTitle = 'Settings';
+
+  constructor(app: AppComponent) {
+    app.title = "Settings";
+  }
+
 }

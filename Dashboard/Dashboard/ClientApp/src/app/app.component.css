@@ -1,0 +1,79 @@
+.tagline {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 2px;
+  margin: 0px auto 0px auto;
+  background-color: #dcd9d9;
+}
+
+.pageTitleBox {
+  border: solid 1px silver;
+  border-radius: 3px;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+  .pageTitleBox .pgTitle {
+    background-color: azure;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 10px 2px 10px;
+    opacity: .7;
+    display: inline-block;
+  }
+
+.profilePic1 {
+  margin: 12px 0px 0px 25px;
+  border: solid 4px #fff;
+  border-radius: 50%;
+  background-image: url(/assets/back2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
+.editTitleBack, .editProfile {
+  background-color: #000;
+  padding: 3px 7px 3px 7px;
+  display: inline-block;
+}
+
+.editTitleBack {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+.editProfile {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+  .fa-camera {
+    opacity: .5 !important;
+  }
+
+  .editProfile a, .changeTitleBack a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+    .fa-camera:hover {
+      opacity: 1 !important;
+    }
+

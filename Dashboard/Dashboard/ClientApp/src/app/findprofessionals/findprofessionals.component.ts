@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-findprofessionals-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./findprofessionals.component.css']
 })
 export class FindProfessionalsComponent {
-  public pageTitle = 'Find Professionals';
+  constructor(app: AppComponent) {
+    app.title = "Find Professionals";
+  }
 }

@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-files-component',
   templateUrl: './files.component.html'
 })
 export class FilesComponent {
-  public pageTitle = 'Files';
+  constructor(app: AppComponent) {
+    app.title = "Files";
+  }
 }

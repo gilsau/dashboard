@@ -1,8 +1,20 @@
 <app-header-component></app-header-component>
-<div class="container" style="margin:0px auto 0px auto;">
-  <div class="row" style="padding:0px;margin:0px;">
-    <div class="col-sm-2" style="padding:0px;margin:0px;"><app-sidebar-component></app-sidebar-component></div>
-    <div class="col-sm-8" style="padding:0px;margin:0px;">test</div>
-    <div class="col-sm-2" style="padding:0px;margin:0px;border:solid 1px yellow;">test</div>
+<div class="container tagline">
+  Work Hard! ...and Play Hard! ...with DashBox! <a target="_blank" href="/">Click to Learn More...</a>
+</div>
+<div class="container" style="padding:1px;">
+  <div class="pageTitleBox" [style.background-image]="pageTitleBackImg">
+    <div class="pgTitle">{{ title }}</div>
+    <div class="profilePic1">
+      <div class="editProfile"><a [routerLink]='["/profile"]'><span class="fa fa-camera"></span></a></div>
+    </div>
+    <div class="editTitleBack">
+      <div class="changeTitleBack"><a [routerLink]='["/profile"]'><span class="fa fa-camera"></span></a></div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-sm-2 noPad noMarg"><app-sidebar-component></app-sidebar-component></div>
+    <div class="col-sm-8 noPad noMarg"><router-outlet></router-outlet></div>
+    <div class="col-sm-2 noPad noMarg"><app-sidebar2-component></app-sidebar2-component></div>
   </div>
 </div>

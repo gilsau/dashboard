@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-postjob-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./postjob.component.css']
 })
 export class PostJobComponent {
-  public pageTitle = 'Post A Job';
+  constructor(app: AppComponent) {
+    app.title = "Post A Job";
+  }
 }

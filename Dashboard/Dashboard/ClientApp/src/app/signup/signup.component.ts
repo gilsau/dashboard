@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
 import { NgForm } from '@angular/forms';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,9 @@ import { NgForm } from '@angular/forms';
 export class SignupComponent implements OnInit {
   user: User;
 
-  constructor() { }
+  constructor(app: AppComponent) {
+    app.title = "Sign Up";
+  }
 
   ngOnInit() {
     this.resetForm();

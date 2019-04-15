@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-weather-component',
   templateUrl: './weather.component.html'
 })
 export class WeatherComponent {
-  public pageTitle = 'Weather';
+  constructor(app: AppComponent) {
+    app.title = "Weather News";
+  }
 }

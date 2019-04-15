@@ -1,13 +1,79 @@
-<div id="sidebar2" style="padding:0px;margin:0px;">
-  <div class="sidebarSection">
-    <span class="glyphicon glyphicon-flash"></span> FUN &amp; GAMES
-    <div class="sidebarBox">
+<div id="sidebar2">
+  <div class="boxOutline">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstChat" aria-expanded="false">
+      <span class="glyphicon glyphicon-comment"></span> CHAT <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstChat" class="sidebarBox collapse">
+      <div class="container">Conversations go here!</div>
+    </div>
+  </div>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstFunnels" aria-expanded="false">
+      <span class="glyphicon glyphicon-usd"></span> SALES FUNNELS <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstFunnels" class="sidebarBox collapse">
       <ul>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/marketplace"]'><span class="glyphicon glyphicon-usd"></span> Dash Marketplace</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/fbmarketplace"]'><span class="glyphicon glyphicon-usd"></span> Facebook Marketplace</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/ebay"]'><span class="glyphicon glyphicon-usd"></span> Push to Ebay</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/amazon"]'><span class="glyphicon glyphicon-usd"></span>  Push to Amazon</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/letgo"]'><span class="glyphicon glyphicon-usd"></span>  Post on LetGo</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/offerup"]'><span class="glyphicon glyphicon-usd"></span>  Post on OfferUp</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/craigslist"]'><span class="glyphicon glyphicon-usd"></span>  Post on Craigslist</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/reports"]'><span class="glyphicon glyphicon-signal"></span> Sales Reports</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstJobSearch" aria-expanded="false">
+      <span class="glyphicon glyphicon-briefcase"></span> JOB SEARCH <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstJobSearch" class="sidebarBox collapse">
+      <ul>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/jobs"]'><span class="glyphicon glyphicon-search"></span> Find Jobs</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/jobprofile"]'><span class="glyphicon glyphicon-briefcase"></span> My Job Profile</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/portfolio"]'><span class="glyphicon glyphicon-picture"></span> My Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstFindTalent" aria-expanded="false">
+      <span class="fa fa-users"></span> FIND TALENT <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstFindTalent" class="sidebarBox collapse">
+      <ul>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/findprofessionals"]'><span class="glyphicon glyphicon-search"></span> Find Professionals</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/postjob"]'><span class="glyphicon glyphicon-cloud-upload"></span> Post A Job</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstFunGames" aria-expanded="true">
+      <span class="glyphicon glyphicon-flash"></span> FUN &amp; GAMES <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstFunGames" class="sidebarBox collapse in">
+      <ul>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/forums"]'><span class="glyphicon glyphicon-edit"></span> Forums</a></li>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/games"]'><span class="glyphicon glyphicon-knight"></span> Play Games</a></li>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/radio"]'><span class="glyphicon glyphicon-music"></span> Listen to Radio</a></li>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/videos"]'><span class="glyphicon glyphicon-film"></span> Search Videos</a></li>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/photos"]'><span class="glyphicon glyphicon-camera"></span> Search Photos</a></li>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/events"]'><span class="glyphicon glyphicon-glass"></span> Find Events</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstSocConnect" aria-expanded="true">
+      <span class="glyphicon glyphicon-picture"></span> SOCIAL CONNECT <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstSocConnect" class="sidebarBox collapse in">
+      <ul>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/youtube"]'><span class="fa fa-youtube-square"></span> YouTube</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/facebook"]'><span class="fa fa-facebook"></span> Facebook</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/instagram"]'><span class="fa fa-instagram"></span> Instagram</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/twitter"]'><span class="fa fa-twitter"></span> Twitter</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/linkedin"]'><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/pinterest"]'><span class="fa fa-pinterest"></span> Pinterest</a></li>
       </ul>
     </div>
   </div>

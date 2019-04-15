@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-fbmarketplace-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./fbmarketplace.component.css']
 })
 export class FBMarketplaceComponent {
-  public pageTitle = 'FB Marketplace';
+  constructor(app: AppComponent) {
+    app.title = "Facebook Marketplace";
+  }
 }

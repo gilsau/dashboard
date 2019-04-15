@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../services/user.service';
 import { CookieService } from '../services/cookie.service';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-login-component',
@@ -10,8 +11,10 @@ import { CookieService } from '../services/cookie.service';
 })
 export class LoginComponent {
 
-  constructor(private route: ActivatedRoute, private userSvc:UserService, private cookieSvc:CookieService) { }
-
+  constructor(private route: ActivatedRoute, private userSvc: UserService, private cookieSvc: CookieService, app: AppComponent) {
+    app.title = "Login";
+  }
+  
   ngOnInit() {
 
     //check logout param

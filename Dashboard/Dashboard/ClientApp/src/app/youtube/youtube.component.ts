@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-youtube-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./youtube.component.css']
 })
 export class YouTubeComponent {
-  public pageTitle = 'YouTube';
+  constructor(app: AppComponent) {
+    app.title = "YouTube";
+  }
 }

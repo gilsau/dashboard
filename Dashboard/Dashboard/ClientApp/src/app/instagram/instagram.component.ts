@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-instagram-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./instagram.component.css']
 })
 export class InstagramComponent {
-  public pageTitle = 'Instagram';
+  constructor(app: AppComponent) {
+    app.title = "Instagram";
+  }
 }

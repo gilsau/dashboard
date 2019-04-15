@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../../app/app.component';
 
 @Component({
   selector: 'app-jobprofile-component',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./jobprofile.component.css']
 })
 export class JobProfileComponent {
-  public pageTitle = 'Job Profile';
+  constructor(app: AppComponent) {
+    app.title = "My Job Profile";
+  }
 }

@@ -1,0 +1,54 @@
+.dropdown {
+  color: #eee;
+}
+
+  /* Open Bootstrap Navbar Dropdown Menu, on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+  }
+
+.glyphicon {
+  font-size: 18px;
+}
+
+[type='search'] {
+  -webkit-appearance: searchfield;
+  width: 450px;
+  border: none;
+  padding: 5px 3px 5px 3px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  [type='search'] {
+    width: 170px;
+  }
+}
+
+#tblLogo td {
+  vertical-align: top;
+}
+
+.navbar-nav li {
+  margin: 0px !important;
+}
+
+.divHeadLink {
+  display: inline-block;
+}
+
+.head-active-link {
+  color: #d2caff !important;
+}
+
+.headLink:link, .headLink:active, .headLink:visited, .headLink:focus, .headLink:hover {
+  color: #eee;
+}
+
+.userPic {
+  height: 25px;
+  border-radius: 50%;
+  border: solid 2px #fff;
+}

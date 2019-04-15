@@ -1,0 +1,49 @@
+.profilePrevBox {
+  border: solid 1px #808080;
+  border-radius: 3px;
+  color: #000;
+  cursor: default;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: #fff;
+}
+
+  .profilePrevBox ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+    .profilePrevBox ul li {
+      border-top: solid 1px #cfcfcf;
+      padding: 5px;
+    }
+
+hr.thin {
+  padding: 1px;
+  margin: 0px;
+}
+
+.tagline {
+  border-bottom: solid 1px #cfcfcf;
+  text-align: center;
+  background-color: #fbfbfb;
+  color: #494949;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  #trTagline {
+    display: none;
+    margin: 0px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+}

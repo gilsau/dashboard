@@ -1,0 +1,46 @@
+.msgBox {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.msgTextBox, .msgTextBox:focus {
+  min-height: 60px;
+  width: 100%;
+  outline: none !important;
+  border: none;
+  font-size: 16px;
+}
+
+.tblMsgBox td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+#msgActionsBox span {
+  margin: 1px;
+}
+
+.btn-info {
+  border-radius: 40% !important;
+  background-color: #eee !important;
+  color: #000 !important;
+  padding: 5px 15px 5px 15px !important;
+  border: none !important;
+  opacity: .6 !important;
+}
+
+  .btn-info:hover {
+    opacity: 1 !important;
+  }
+
+.btn-primary {
+  opacity: .6 !important;
+}
+
+  .btn-primary:hover {
+    opacity: 1 !important;
+  }

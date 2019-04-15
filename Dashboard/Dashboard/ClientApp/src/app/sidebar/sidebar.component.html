@@ -1,17 +1,9 @@
-<div id="sidebar" style="padding:0px;margin:0px;">
+<div id="sidebar">
   <div class="profilePrevBox text-center">
-    <div class="tagline">
-      Work Hard!<br />
-      ...and Play Hard!<br />
-      ...with DashBox!<br />
-      <a target="_blank" href="/">Click to Learn More...</a>
-    </div>
-    <div style="background-image: url(/assets/back2.jpg);background-position: center;background-size: cover;height:150px;">
-      <div class="editProfile"><a [routerLink]='["/profile/1"]'>Edit Profile</a></div>
-    </div>
-    <h3 class="thin">BluDox</h3>
-    <h4>( Gilbert Sauceda )<br />
-        Austin, Tx USA
+    <h3>BluDox</h3>
+    <h4>
+      ( Gilbert Sauceda )<br />
+      Austin, Tx USA
     </h4>
     <ul>
       <li class="text-center">I like Math, Physics, Computers, Robots, Cyberpunk, Hiking, Fishing, Camping, Crystals, Gargoyles</li>
@@ -20,32 +12,24 @@
       <li>MVC, Web API, REST API Developer</li>
     </ul>
   </div>
-  <div class="sidebarSection">
-    <span class="glyphicon glyphicon-flash"></span> FUN &amp; GAMES
-    <div class="sidebarBox">
-      <ul>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/games"]'><span class="glyphicon glyphicon-knight"></span> Play Games</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/radio"]'><span class="glyphicon glyphicon-music"></span> Listen to Radio</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/videos"]'><span class="glyphicon glyphicon-film"></span> Search Videos</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/photos"]'><span class="glyphicon glyphicon-camera"></span> Search Photos</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/events"]'><span class="glyphicon glyphicon-glass"></span> Find Events</a></li>
-      </ul>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstCalendar" aria-expanded="true">
+      <span class="glyphicon glyphicon-calendar"></span> CALENDAR <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstCalendar" class="sidebarBox collapse in">
+      <div class="container">Calendar go here!</div>
     </div>
   </div>
-  <div class="sidebarSection">
-    <span class="glyphicon glyphicon-picture"></span> SOCIAL CONNECT
-    <div id="ddBox1" class="sidebarBox">
-      <ul>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/youtube"]'><span class="glyphicon glyphicon-facetime-video"></span> YouTube</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/facebook"]'><span class="glyphicon glyphicon-share"></span> Facebook</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/instagram"]'><span class="glyphicon glyphicon-share"></span> Instagram</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/twitter"]'><span class="glyphicon glyphicon-share"></span> Twitter</a></li>
-        <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/linkedin"]'><span class="glyphicon glyphicon-share"></span> LinkedIn</a></li>
-      </ul>
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle btn" data-toggle="collapse" data-target="#lstTasks" aria-expanded="false">
+      <span class="glyphicon glyphicon-check"></span> TASKS <span class="expand_caret fa fa-angle-down pull-right"></span>
+    </div>
+    <div id="lstTasks" class="sidebarBox collapse">
+      <div class="container">Tasks go here!</div>
     </div>
   </div>
-  <div class="sidebarSection">
-    <span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;STORAGE
+  <div class="boxOutline topMarg10">
+    <div class="boxOutlineTitle"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;STORAGE</div>
     <div class="sidebarBox">
       <ul>
         <li [routerLinkActive]='["li-active-link"]'><a [routerLink]='["/files"]'><span class="glyphicon glyphicon-duplicate"></span> Files</a></li>
